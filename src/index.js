@@ -1,9 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { App } from "./firstComponent.js";
+import { Comment } from "./Comment.js";
 import "./index.css";
 
+const comment = {
+  date: new Date().toLocaleDateString(),
+  text: "I hope you enjoy learning React!",
+  author: {
+    name: "Hello Kitty",
+    avatarUrl: "https://placekitten.com/g/64/64",
+  },
+};
+
 ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(
+  <Comment date={comment.date} text={comment.text} author={comment.author} />,
+  document.querySelector(".c")
+);
 
 // function MyComponent(props) {
 //   return <h1>Welcome {props.name}</h1>;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export function MyComponent(props) {
+function MyComponent(props) {
   return <h1>This Component was built by {props.name}!</h1>;
 }
 
@@ -10,7 +10,7 @@ export function App() {
       <MyComponent name="Rohit" />
       <MyComponent name="Steve" />
       <MyComponent name="Tony" />
-      <MyComponent name="Nithila" />
+      <MyComponent name="Shelby" />
     </div>
   );
 }
